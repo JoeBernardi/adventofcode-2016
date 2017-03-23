@@ -11,7 +11,7 @@ let pass = [],
 
 for(let i=0; i<numberOfWorkers; i++) {
   workerProcesses.push(
-    cp.fork('./8-hash-module', [i, numberOfWorkers, input])
+    cp.fork('./modules/8-hash-module', [i, numberOfWorkers, input])
     .on('message', obj => updatePass(obj))
   )
 }
