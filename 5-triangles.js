@@ -3,7 +3,7 @@
 const fs = require('fs')
 let valids = 0
 
-let data = fs.readFileSync('5-triangles-input.txt', 'utf8').trim()
+let data = fs.readFileSync('inputs/5-triangles-input.txt', 'utf8').trim()
   .split('\n')
   .map(line => line.trim().split(/\s+/).map(side => +side))
 

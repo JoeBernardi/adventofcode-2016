@@ -6,7 +6,7 @@ const fs = require('fs')
 
 let columns = []
 
-let data = fs.readFileSync('10-repetition-input.txt', 'utf8')
+let data = fs.readFileSync('inputs/10-repetition-input.txt', 'utf8')
  	.split('\n').map(el => el.split('')).forEach(line => {
  		line.forEach((char, idx) => {
  			columns[idx] ? columns[idx].push(char) : columns[idx] = [char]

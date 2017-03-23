@@ -12,7 +12,7 @@ const fs = require('fs')
 const letters = 'abcdefghijklmnopqrstuvwxyz'.split('')
 
 
-let roomCodes = fs.readFileSync('6-rooms-input.txt', 'utf8').trim()
+let roomCodes = fs.readFileSync('inputs/6-rooms-input.txt', 'utf8').trim()
   .split('\n')
   .map(line => line.slice(0,-1)
   .split('['))
